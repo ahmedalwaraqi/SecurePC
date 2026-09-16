@@ -4,9 +4,10 @@
   "description": "High-Performance Windows System Toolkit & Optimization Suite",
   "private": true,
   "scripts": {
-    "dev": "npm --prefix ui run dev",
-    "build": "npm --prefix ui run build",
-    "tauri": "npm --prefix ui run tauri"
+    "dev": "ui\\node_modules\\.bin\\tauri dev",
+    "build": "ui\\node_modules\\.bin\\tauri build",
+    "ui:dev": "npm.cmd --prefix ui run dev",
+    "ui:build": "npm.cmd --prefix ui run build"
   },
   "author": "Ahmed Alwaraqi <ahmedalwaraqi@gmail.com>",
   "license": "MIT"
