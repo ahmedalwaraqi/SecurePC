@@ -22,3 +22,5 @@ gen/
 Thumbs.db
 .vscode/
 .idea/
+
+*.tsbuildinfo
