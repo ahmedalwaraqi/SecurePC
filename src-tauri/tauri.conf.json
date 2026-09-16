@@ -1,0 +1,39 @@
+{
+  "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
+  "productName": "SecurePC",
+  "version": "1.0.0",
+  "identifier": "com.ahmedalwaraqi.securepc",
+  "build": {
+    "frontendDist": "../ui/dist",
+    "devUrl": "http://localhost:5173",
+    "beforeDevCommand": "npm --prefix ui run dev",
+    "beforeBuildCommand": "npm --prefix ui run build"
+  },
+  "app": {
+    "withGlobalTauri": false,
+    "windows": [
+      {
+        "title": "SecurePC — System Toolkit & Performance Optimizer",
+        "width": 1180,
+        "height": 780,
+        "minWidth": 900,
+        "minHeight": 600,
+        "resizable": true,
+        "decorations": true,
+        "transparent": false
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["nsis", "msi"],
+    "publisher": "Ahmed Alwaraqi",
+    "copyright": "© 2026 Ahmed Alwaraqi",
+    "category": "Utility",
+    "shortDescription": "High-Performance Windows System Toolkit & Optimization Suite",
+    "longDescription": "SecurePC delivers deep hardware monitoring, fast process management, startup item control, system specs, and disk cleanup in a sleek, zero-overhead desktop interface."
+  }
+}
